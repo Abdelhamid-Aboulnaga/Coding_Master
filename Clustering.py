@@ -7,7 +7,7 @@ from sklearn.cluster import KMeans
 
 #data_2d = a dataframe containing radius of gyration and helical content values for each conformation
 
-def clustering_2d_data(data_2d):
+def clustering_2d_data(data2d):
 
     # Applying k-means clustering with 2 clusters
     kmeans = KMeans(n_clusters=2, random_state=0).fit(data2d)
@@ -55,4 +55,4 @@ def clustering_2d_data(data_2d):
     plt.show()
 if __name__ == "__main__":
     data_2d=sys.argv[1]
-    clustering_2d_data(data_2d)
+    clustering_2d_data(data2d)
